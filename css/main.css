@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  color: #ff3d00;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+section.SectionOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+section.SectionOne div.profile {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  border: 10px solid #ff3d00;
+}
+
+.title {
+  color: #ff3d00;
+  font-weight: bold;
+  margin: 15px 5px;
+  font-size: 25px;
+}
+
+.paragraph {
+  max-width: 700px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.list {
+  padding-left: 10px;
+  text-align: left;
+}
+.list li {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.list li i.icon {
+  font-size: 25px;
+  color: #ff3d00;
+  padding-right: 10px;
+}
+.list li a {
+  color: #ff3d00;
+}
+.list li span {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+div.tableofSkills ul {
+  overflow: auto;
+  max-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+div.tableofSkills ul li {
+  margin: 4px;
+  border-radius: 5px;
+  border: 1px solid #ff3d00;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+}
+div.tableofSkills ul li img {
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+div.tableofSkills ul li span {
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+footer {
+  text-align: left;
+  padding: 15px 5px;
+  background-color: #ff3d00;
+}
+footer span {
+  color: white;
+}
+
+.project {
+  margin: 0px auto;
+  width: 250px;
+  padding: 5px;
+}
+.project div {
+  border: 2px solid #ff3d00;
+  border-radius: 10px;
+  background-color: #ff3d00;
+  padding: 5px;
+}
+.project div img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project div div {
+  padding: 5px;
+}
+.project div div span {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.slideContainer {
+  padding: 10px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ff3d00;
+  /* color of the scroll thumb */
+  border-radius: 0px;
+  /* roundness of the scroll thumb */
+  border: 3px solid #ff3d00;
+  /* creates padding around scroll thumb */
+}/*# sourceMappingURL=main.css.map */

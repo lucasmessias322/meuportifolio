@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portifolio</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2e576afcbf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="SectionOne">
+      <div class="profile"></div>
+    </section>
+
+    <h2 class="title" style="text-align: center">Sobre</h2>
+    <p class="paragraph" style="text-align: center; margin: 0 auto">
+      Ola, Me chamo Lucas sou um desenvolvedor Frontend Junior, Apaixonado por
+      Criaçao e desenvolvimento de interfaces web, Tenho 2.6 anos
+      aproximadamente de experiencia nesta area.
+    </p>
+
+    <br />
+    <br />
+    <br />
+    <h2 class="title" style="text-align: left">Informações:</h2>
+    <div class="list">
+      <li>
+        <i class="icon fa-solid fa-user"></i>
+        <span>Lucas messias</span>
+      </li>
+      <li>
+        <i class="icon fa-solid fa-phone"></i>
+        <span>+55 11946365224</span>
+      </li>
+      <li>
+        <i class="icon fa-solid fa-envelope"></i>
+        <span>lucasmessiaspereira322@gmail.com</span>
+      </li>
+      <li>
+        <i class="icon fa-brands fa-github"></i>
+        <span>
+          <a href="https://github.com/lucasmessias322">lucasmessias322</a>
+        </span>
+      </li>
+    </div>
+    <br />
+    <h2 class="title" style="text-align: left">Conhecimentos:</h2>
+
+    <div class="tableofSkills">
+      <ul className="list" id="list"></ul>
+    </div>
+    <br /><br />
+
+    <h2 class="title" style="text-align: center">Alguns de meus projetos:</h2>
+
+    <div class="slideContainer">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a target="_blank" href="https://englishplusbrasil.herokuapp.com">
+              <div class="project">
+                <div>
+                  <img src="assets/engl.png" alt="" />
+                  <div>
+                    <span>English Plus+</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <div class="project">
+              <a
+                target="_blank"
+                href="https://lucasmessias322.github.io/landing_pages/03-strange/"
+              >
+                <div>
+                  <img src="assets/marv.png" alt="" />
+                  <div>
+                    <span>Dr.Strange clone</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project">
+              <a
+                target="_blank"
+                href="https://lucasmessias322.github.io/landing_pages/tesla-clone/"
+              ></a>
+              <div>
+                <img src="assets/tesla.png" alt="" />
+                <div>
+                  <span>Tesla clone</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="project">
+              <a
+                target="_blank"
+                href="https://lucasmessias322.github.io/landing_pages/spaceX-landing-page-clone/"
+              >
+                <div>
+                  <img src="assets/spacex.png" alt="" />
+                  <div>
+                    <span>Spacex Clone</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+    <br />
+
+    <p
+      class="paragraph"
+      style="
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 0px;
+        font-size: 20px;
+      "
+    >
+      Você pode ver mais projetos no meu <a href="">GitHub</a>
+    </p>
+    <br /><br />
+    <footer>
+      <span>Criado por Lucas messias</span>
+    </footer>
+
+    <script src="./js/app.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        // slidesPerView: 2,
+        spaceBetween: 15,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          400: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 3,
+            // spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            // spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
