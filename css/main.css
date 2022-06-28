@@ -4,6 +4,22 @@
   padding: 0;
   margin: 0;
 }
+* ::-webkit-scrollbar {
+  width: 10px;
+  /* width of the entire scrollbar */
+}
+* ::-webkit-scrollbar-track {
+  background: transparent;
+  /* color of the tracking area */
+}
+* ::-webkit-scrollbar-thumb {
+  background-color: #ff3d00;
+  /* color of the scroll thumb */
+  border-radius: 5px;
+  /* roundness of the scroll thumb */
+  border: 1px solid white;
+  /* creates padding around scroll thumb */
+}
 
 a {
   text-decoration: none;
@@ -28,6 +44,8 @@ section.SectionOne div.profile {
   height: 250px;
   border-radius: 100%;
   border: 10px solid #ff3d00;
+  background-image: url("../assets/profile.jpg");
+  background-size: contain;
 }
 
 .title {
@@ -67,8 +85,6 @@ section.SectionOne div.profile {
 }
 
 div.tableofSkills ul {
-  overflow: auto;
-  max-height: 300px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -81,6 +97,11 @@ div.tableofSkills ul li {
   align-items: center;
   padding: 10px;
   list-style: none;
+}
+div.tableofSkills ul li:hover {
+  background-color: #ff3d00;
+  box-shadow: 5px 5px 10px #ff3d00;
+  color: white;
 }
 div.tableofSkills ul li img {
   width: 25px;
@@ -134,23 +155,4 @@ footer span {
   padding: 10px 15px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-body::-webkit-scrollbar {
-  width: 12px;
-  /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: transparent;
-  /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #ff3d00;
-  /* color of the scroll thumb */
-  border-radius: 0px;
-  /* roundness of the scroll thumb */
-  border: 3px solid #ff3d00;
-  /* creates padding around scroll thumb */
 }/*# sourceMappingURL=main.css.map */

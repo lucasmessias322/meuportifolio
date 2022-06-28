@@ -5,6 +5,20 @@ $color1: #ff3d00;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
+  ::-webkit-scrollbar {
+    width: 10px; /* width of the entire scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $color1; /* color of the scroll thumb */
+    border-radius: 5px; /* roundness of the scroll thumb */
+    border: 1px solid white; /* creates padding around scroll thumb */
+  }
 }
 
 a {
@@ -30,6 +44,8 @@ section.SectionOne {
     height: 250px;
     border-radius: 100%;
     border: 10px solid $color1;
+    background-image: url("../assets/profile.jpg");
+    background-size: contain;
   }
 }
 
@@ -79,8 +95,8 @@ section.SectionOne {
 
 div.tableofSkills {
   ul {
-    overflow: auto;
-    max-height: 300px;
+    // overflow: auto;
+    // max-height: 300px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -93,6 +109,12 @@ div.tableofSkills {
       align-items: center;
       padding: 10px;
       list-style: none;
+
+      &:hover {
+        background-color: $color1;
+        box-shadow: 5px 5px 10px $color1;
+        color: white;
+      }
 
       img {
         width: 25px;
@@ -150,18 +172,4 @@ footer {
   padding: 10px 15px;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-body::-webkit-scrollbar {
-  width: 12px; /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: transparent; /* color of the tracking area */
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: $color1; /* color of the scroll thumb */
-  border-radius: 0px; /* roundness of the scroll thumb */
-  border: 3px solid $color1; /* creates padding around scroll thumb */
 }

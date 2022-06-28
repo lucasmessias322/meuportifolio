@@ -23,3 +23,5 @@ skills.map((elem, i) => {
     <span>${elem.text}</span>
   </li>`;
 });
+
+
